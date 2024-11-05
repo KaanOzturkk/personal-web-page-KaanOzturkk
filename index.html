@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://openlayers.org/en/v6.9.0/build/ol.js"></script> <!-- Versiyon numarasını açıkça belirttik -->
+    <style>
+        #map {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aktür Kaan Öztürk 21833374</h1>
+    <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="background.html">Geçmişim</a>
+        <a href="technologies.html">Teknolojiler</a>
+    </nav>
+    
+    <!-- Harita eklenecek alan -->
+    <div id="map"></div>
+
+    <!-- OpenLayers Harita Kodları -->
+    <script>
+        var map = new ol.Map({
+            target: 'map',
+            layers: [
+                new ol.layer.Tile({
+                    source: new ol.source.OSM()
+                })
+            ],
+            view: new ol.View({
+                center: ol.proj.fromLonLat([28.9784, 41.0082]), // İstanbul Koordinatları
+                zoom: 10
+            })
+        });
+    </script>
+</body>
+</html>

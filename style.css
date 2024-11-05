@@ -1,0 +1,73 @@
+body {
+    background-color: #1a1a1a; /* Koyu gri arka plan rengi */
+    color: #ffffff; /* Yazı rengi beyaz */
+    font-family: Arial, sans-serif; /* Yazı tipi */
+}
+
+nav {
+    background-color: #333; /* Navigasyon için koyu arka plan */
+    padding: 10px;
+}
+
+nav a {
+    color: #ffffff; /* Navigasyon linkleri beyaz */
+    text-decoration: none; /* Alt çizgi yok */
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #575757; /* Hover (üzerine gelince) rengi */
+}
+
+h1 {
+    text-align: center; /* Başlık merkezi */
+}
+
+#map {
+    border: 2px solid #ffffff; /* Haritanın etrafına beyaz çerçeve */
+}
+.content {
+    padding: 20px; /* İçerik alanına boşluk ekle */
+}
+
+h2 {
+    color: #f0f0f0; /* Başlık rengi */
+}
+
+ul {
+    list-style-type: square; /* Liste stilini değiştir */
+    margin: 10px 0; /* Listeye üst ve alt boşluk ekle */
+    padding: 0 20px; /* Listeye soldan boşluk ekle */
+}
+
+table {
+    width: 100%; /* Tablo genişliği */
+    border-collapse: collapse; /* Kenarları birleştir */
+    margin-top: 20px; /* Üstten boşluk */
+}
+
+th, td {
+    border: 1px solid #ffffff; /* Kenar rengi */
+    padding: 10px; /* Hücreye iç boşluk ekle */
+    text-align: left; /* Yazıyı sola hizala */
+}
+
+tr:nth-child(even) {
+    background-color: #333; /* Çift satırlar için arka plan rengi */
+}
+button {
+    background-color: #4CAF50; /* Buton rengi */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: background-color 0.3s ease; /* Geçiş animasyonu */
+}
+
+button:hover {
+    background-color: #45a049; /* Hover rengi */
+}
